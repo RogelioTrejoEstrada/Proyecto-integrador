@@ -1,40 +1,243 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+    <title>Presentación</title>
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/blood.css">
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <!-- Portada -->
+            <section>
+                <img src="/image/logo_upa-PhotoRoom.png" alt="Logotipo UPA"
+                    style="width: 300px; position: relative; left: -450px;">
+                <img src="/image/Logotipo ISEI-PhotoRoom.png" alt="Logotipo ISEI"
+                    style="width: 125px; position: relative; right: -450px;">
+                <h3>Remodelación de Cableado en Edificio 3</h3>
+                <hr>
+                <h4>"PR" NETWOR DESING, MONITORING AND IMPLEMENTATION</h4>
+                <div style="text-align: left;">
+                    <h5>Integrantes de Trabajo</h5>
+                    <ul>
+                        <li>Alexis de Jesús Jauregui Romero UP180882</li>
+                        <li>Luis Axel Diaz Pedroza UP190809</li>
+                        <li>Gerardo Gabriel Piña Leos UP190888</li>
+                        <li>Rogelio Trejo Estrada UP190830</li>
+                    </ul>
+                </div>
+            </section>
+            <!--  -->
+            <section>
+                <section>
+                    <h3 style="text-align: left;">Problemática</h3>
+                    <hr>
+                    <p>
+                        La Univercidad Politecnica de Aguascalientes, solicita por medio de una licitación, la
+                        implementación la infrectuctura informática, para el SITE ubicado en el Edificio 3 del plantel
+                    </p>
+                    <img src="/image/edi3.jpg" alt="Edificio 3" style="width: 600px;">
+                </section>
+                <!-- -->
+                <section>
+                    <h3 style="text-align: left;">Requisitos</h3>
+                    <hr>
+                    <ul>
+                        <li>Implementación del SITE (Dispositivos, Sistemas, etc)</li>
+                        <li>Cableado de Comunicación</li>
+                        <li>Sistemas de administración</li>
+                    </ul>
+                </section>
+            </section>
+            <!-- Planeación del proyecto -->
+            <section>
+                <section>
+                    <h3 style="text-align: left;">Cronograma de Actividades</h3>
+                    <hr>
+                    <img src="/image/cronorama.jpeg" alt="Cronograma" style="width: 900px;">
+                </section>
+                <section>
+                    <h3 style="text-align: left;">Ruta Crítica</h3>
+                    <hr>
+                    <img src="/image/criticalPath.png" alt="Cronograma" style="width: 800px;">
+                </section>
+            </section>
+            <!-- Desarrollo -->
+            <section>
+                <section>
+                    <h3 style="text-align: left;">Cableado Estructurado</h3>
+                    <hr>
+                    <div class="r-stack">
+                        <p class="fragment fade-out">Al contar con los planos del edificio número tres se comenzó con el
+                            diseño del cableado estructurado basándose en las
+                            normativas de la ISO/IEC-11801</p>
+                        <img class="fragment" src="/image/PlantaBaja.png" alt="">
+                        <img class="fragment" src="/image/PlantaAlta.png" alt="">
+                    </div>
+                </section>
+                <section>
+                    <h3 style="text-align: left;">Diseño Modular</h3>
+                    <hr>
+                    <p>Para el diseño modular de la red tomamos en consideración los sistemas de los que se compone una
+                        red para el control y
+                        monitoreo de cada sistema, entre los cuales está el sistema contra rayo y suelo, sistema de aire
+                        acondicionado, sistema
+                        contra incendios, sistema de decoración, sistema cableado estructurado, sistema de fuente de
+                        alimentación, sistema de
+                        gabinetes, sistema de mantenimiento, así como el control y monitoreo de cada uno de los sistemas
+                        para conocer e
+                        identificar los errores que puedan suceder en cada uno de los módulos de la red.</p>
+                </section>
+                <section>
+                    <h3 style="text-align: left;">Diseño de topología lógica-física.</h3>
+                    <hr>
+                    <div class="r-stack">
+                        <div class="fragment fade-out">
+                            <span>Planta baja</span>
+                            <img src="/image/planta-baja-dis.png" alt="">
+                        </div>
+                        <div class="fragment">
+                            <span>Planta alta</span>
+                            <img src="/image/planta-alta-dis.png" alt="">
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h3 style="text-align: left;">SITE</h3>
+                    <hr>
+                    <p>Este mismo está considerado que cuente con:</p>
+                    <ul>
+                        <li>6 Switch Cisco Gigabit Ethernet Catalyst 9300L, 24 Puertos</li>
+                        <li>2 Router Draytek Ethernet de Banda Dual MU-MIMO Vigor2962, Alámbrico, 4x RJ-45</li>
+                        <li>2 Tripp Lite SMART1500LCD UPS 1500VA 900W</li>
+                        <li>Intellinet Rack de 4 Postes 19'', 45U, hasta 360Kg, Negro</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3 style="text-align: left;">Sistema de Refrigeración</h3>
+                    <hr>
+                    <p>Para el sistema de refrigeración, se contempló un Aire Acondicionado de Ventana - 6,000 BTU,
+                        cubriendo la demanda y la
+                        eficiencia total del sistema. Con esto logramos contemplar que todos los dispositivos que se
+                        encuentran dentro del mismo
+                        SITE sé encontraran en un buen ambiente para mejorar el rendimiento de los mismos y alargar la
+                        vida útil.</p>
+                </section>
+                <section>
+                    <h3 style="text-align: left;">Sistema constra incendios</h3>
+                    <hr>
+                    <p>
+                        Para poder manejar un sistema contra incendios de manera efectiva y contemplar fallos en un
+                        futuro, este se conforma de
+                        2 componentes importantes:
+                    </p>
+                    <ul>
+                        <li>Detector de Humo y Monóxido de Carbono</li>
+                        <li>Extintor - Clase ABC, 5 lb, 2A:10B:C</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3 style="text-align: left;">Sistema de monitoreo</h3>
+                    <hr>
+                    <p>El sistema de monitoreo está conformado por Kit Videovigilancia 2 Cámaras Hilook Hd 720p Utp
+                        Disco Duro 500gb, el cual
+                        se puede acceder remotamente desde cualquier parte del mundo, ayudando a la continua vigilancia
+                        y verificación ante
+                        cualquier incidente que pueda pasar, ya sea humano o de otro tipo.</p>
+                </section>
+                <section>
+                    <h3 style="text-align: left;">Consideraciones extra</h3>
+                    <hr>
+                    <p>
+                        Para el mejoramiento de la red, se cotizó una nueva salida a internet desde el SITE presente,
+                        esto con el fin de ante
+                        cualquier eventualidad imprevista en el nodo central, se pueda seguir trabajando con servicios
+                        exteriores (verificación
+                        de correo, salida a internet, etc.). Llevando esto a cabo se mejora el estatus de la red como
+                        del entorno de trabajo
+                        para los trabajadores en el edificio 3 de la Universidad Politécnica de Aguascalientes.
+
+                    </p>
+                </section>
+            </section>
+            <!--  -->
+            <section>
+                <h3 style="text-align: left;">Presupuesto</h3>
+                <hr>
+            </section>
+            <!--  -->
+            <section>
+                <h3 style="text-align: left;">Conclución</h3>
+                <hr>
+                <div class="r-stack">
+                    <div class="fragment">
+                        <div class="fragment fade-out">
+                            <strong>Fortaleza</strong>
+                            <p>Algunas fortalezas que se pueden encuentra es el conocimiento fresco que se ha adquirido
+                                a lo
+                                largo
+                                del tiempo de estudio, así
+                                como los diferentes conocimientos en diferentes momentos en los integrantes de trabajo.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="fragment">
+                        <div class="fragment fade-out">
+                            <strong>Debilidad</strong>
+                            <p>Como debilidades se notó que no se cuenta con mucha experiencia para trabajos de esta
+                                magnitud, provocando atrasos en la
+                                resolución de actividades designadas.</p>
+                        </div>
+                    </div>
+                    <div class="fragment">
+                        <div class="fragment fade-out">
+                            <strong>Oportunidades</strong>
+                            <p>Se encuentra como oportunidad la implementación de actividades de esta índole para
+                                fortalecer los conocimientos y
+                                habilidades en trabajos lo más cercano a la realidad</p>
+                        </div>
+                    </div>
+                    <div class="fragment">
+                        <div class="fragment fade-out">
+                            <strong>Amenaza</strong>
+                            <p>Finalmente, la amenaza más grande fue que no se pudo implementar más conocimiento al
+                                cerrarlo en un solo punto y estar
+                                limitados en el tipo de infraestructura que se tiene dentro de la universidad</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+            hash: true,
+
+            // Configuración del tamaño
+            width: 1500,
+
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+        });
+    </script>
+</body>
+
 </html>
